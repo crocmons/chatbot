@@ -106,8 +106,8 @@ if(response.ok){
   typeText(messageDiv,parsedData);
 }else{
   const err = await response.text();
-  messageDiv.innerHTML = "Something went wrong try again later!"
-  alert(err)
+  messageDiv.innerHTML = "OpenAI Free Session is Expired! Recharge Your API"
+  alert(messageDiv)
 }
 
 }
