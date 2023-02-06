@@ -106,8 +106,8 @@ if(response.ok){
   typeText(messageDiv,parsedData);
 }else{
   const err = await response.text();
-  messageDiv.innerHTML = "OpenAI Free Session is Expired! Recharge Your API"
-  alert(messageDiv)
+  messageDiv.innerHTML = "OpenAI Free Trial Usage Ends! If you want to chat you have to buy the subscription."
+  alert("Sorry you can't chat because openai free trial session is out of balance now!")
 }
 
 }
